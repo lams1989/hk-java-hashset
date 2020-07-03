@@ -8,16 +8,16 @@ public class App {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int t = s.nextInt();
-		String[] paresder = new String[t];
-		String[] paresizq = new String[t];
+		String[] pair_left = new String[t];
+		String[] pair_right = new String[t];
 		for (int i = 0; i < t; i++) {
-			paresder[i] = s.next();
-			paresizq[i] = s.next();
+			pair_left[i] = s.next();
+			pair_right[i] = s.next();
 		}
-		Set<String> pares = new HashSet<String>(t);
+		Set<String> pairs = new HashSet<String>(t);
 		int count = 0;
 		for (int i = 0; i < t; i++) {
-			boolean b = pares.add(paresder[i] + " " + paresizq[i]);
+			boolean b = pairs.add(pair_left[i] + " " + pair_right[i]);
 			if (b)
 				count++;
 			System.out.println(count);
