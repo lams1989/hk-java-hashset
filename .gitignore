@@ -1,4 +1,3 @@
-/target/
 ##############################
 ## Java
 ##############################
@@ -27,4 +26,5 @@ build/
 local.properties
 .loadpath
 .factorypath
+target/
 
